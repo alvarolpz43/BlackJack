@@ -1,7 +1,12 @@
 package estructuras.pila;
-// NodoPila.java
 
 import cartas.Carta;
+
+/**
+ * Representa un nodo dentro de una pila de cartas.
+ * Cada nodo contiene una carta y un enlace al nodo siguiente (debajo en la
+ * pila).
+ */
 
 public class NodoPila {
     public Carta carta;

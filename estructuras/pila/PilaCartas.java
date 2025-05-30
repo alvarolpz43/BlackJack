@@ -1,7 +1,11 @@
 package estructuras.pila;
-// PilaCartas.java
 
 import cartas.Carta;
+
+/**
+ * Implementa una estructura tipo Pila para manejar cartas.
+ * Sigue el comportamiento LIFO (último en entrar, primero en salir).
+ */
 
 public class PilaCartas {
     private NodoPila tope;
@@ -17,7 +21,8 @@ public class PilaCartas {
     }
 
     public Carta desapilar() {
-        if (estaVacia()) return null;
+        if (estaVacia())
+            return null;
         Carta carta = tope.carta;
         tope = tope.siguiente;
         return carta;
