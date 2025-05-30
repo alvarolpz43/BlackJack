@@ -11,8 +11,8 @@ public class ArbolDecisionDealer {
         // Árbol binario simple para decisiones básicas
         raiz = new NodoDecision("evaluar");
 
-        raiz.izquierda = new NodoDecision("pedir");     // puntaje < 17
-        raiz.derecha = new NodoDecision("plantarse");   // puntaje ≥ 17
+        raiz.izquierda = new NodoDecision("pedir");     
+        raiz.derecha = new NodoDecision("plantarse");   
     }
 
     public String decidir(int puntaje) {

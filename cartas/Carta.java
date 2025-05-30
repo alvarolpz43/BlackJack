@@ -1,8 +1,8 @@
 package cartas;
 // Carta.java
 public class Carta {
-    private String valor; // A, 2, ..., 10, J, Q, K
-    private String palo;  // ♠, ♥, ♦, ♣
+    private String valor; 
+    private String palo;  
 
     public Carta(String valor, String palo) {
         this.valor = valor;

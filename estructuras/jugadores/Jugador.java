@@ -12,7 +12,7 @@ public class Jugador {
 
     public Jugador(String nombre) {
         this.nombre = nombre;
-        this.mano = new Carta[10]; // límite razonable para Blackjack
+        this.mano = new Carta[10]; 
         this.cantidadCartas = 0;
         this.puntaje = 0;
         this.plantado = false;
