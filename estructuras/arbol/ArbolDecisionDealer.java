@@ -15,6 +15,7 @@ public class ArbolDecisionDealer {
         raiz.derecha = new NodoDecision("plantarse");   
     }
 
+    //Definir si el dealer debe pedir o plantarse
     public String decidir(int puntaje) {
         if (puntaje < 17) {
             return raiz.izquierda.accion;
