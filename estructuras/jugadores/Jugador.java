@@ -1,5 +1,4 @@
 package estructuras.jugadores;
-// Jugador.java
 
 import cartas.Carta;
 
@@ -10,13 +9,17 @@ public class Jugador {
     private int puntaje;
     private boolean plantado;
 
+    // Constructor del jugador
+
     public Jugador(String nombre) {
         this.nombre = nombre;
-        this.mano = new Carta[10]; 
+        this.mano = new Carta[10];
         this.cantidadCartas = 0;
         this.puntaje = 0;
         this.plantado = false;
     }
+
+    // Getters para acceder a los atributos del jugador
 
     public String getNombre() {
         return nombre;
@@ -50,11 +53,12 @@ public class Jugador {
     private void actualizarPuntaje() {
         int total = 0;
         int ases = 0;
-
+        // Suma todas las cartas y cuenta los ases
         for (int i = 0; i < cantidadCartas; i++) {
             int valor = mano[i].obtenerValorNumerico();
             total += valor;
-            if (mano[i].getValor().equals("A")) ases++;
+            if (mano[i].getValor().equals("A"))
+                ases++;
         }
 
         // Ajuste si hay Aces y se pasa de 21

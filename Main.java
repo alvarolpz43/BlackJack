@@ -26,7 +26,7 @@ public class Main {
         ArbolDecisionDealer arbolDealer = new ArbolDecisionDealer();
         TablaHashJugadores jugadores = new TablaHashJugadores(10);
 
-        // Crear jugador humano y dealer
+        // Se craea tanto el jugador como el dealer
         Jugador jugador = new Jugador(nombreJugador);
         Jugador dealer = new Jugador("Dealer");
 
@@ -36,7 +36,7 @@ public class Main {
         turnos.encolar(nombreJugador);
         turnos.encolar("Dealer");
 
-        // Repartir 2 cartas a cada jugador
+        // Se reparte la bajara con 2 cartas a cada jugador
         for (int i = 0; i < 2; i++) {
             jugador.agregarCarta(baraja.robarCarta());
             dealer.agregarCarta(baraja.robarCarta());
@@ -52,7 +52,7 @@ public class Main {
             actual.mostrarMano();
             System.out.println("Puntaje: " + actual.getPuntaje());
 
-            // Lógica del Jugador
+            // Lógica del Jugador donde se le pregunta si quiere otra carta o se plantea
             if (!actual.getNombre().equals("Dealer")) {
                 while (!actual.estaPlantado() && actual.getPuntaje() < 21) {
                     System.out.print("¿Desea otra carta? (s/n): ");
@@ -75,7 +75,7 @@ public class Main {
                     }
                 }
             }
-            // Lógica del Dealer
+            // funcionalidad del Dealer
             else {
                 while (!actual.estaPlantado()) {
                     String decision = arbolDealer.decidir(actual.getPuntaje());
