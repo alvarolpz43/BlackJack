@@ -1,4 +1,8 @@
+package estructuras.pila;
 // PilaCartas.java
+
+import cartas.Carta;
+
 public class PilaCartas {
     private NodoPila tope;
 

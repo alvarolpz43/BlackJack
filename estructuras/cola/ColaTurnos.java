@@ -1,3 +1,4 @@
+package estructuras.cola;
 // ColaTurnos.java
 public class ColaTurnos {
     private NodoCola frente;

@@ -1,4 +1,8 @@
+package estructuras.pila;
 // NodoPila.java
+
+import cartas.Carta;
+
 public class NodoPila {
     public Carta carta;
     public NodoPila siguiente;

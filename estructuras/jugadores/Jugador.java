@@ -1,4 +1,7 @@
+package estructuras.jugadores;
 // Jugador.java
+
+import cartas.Carta;
 
 public class Jugador {
     private String nombre;

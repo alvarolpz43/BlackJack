@@ -1,3 +1,4 @@
+package cartas;
 // NodoCarta.java
 public class NodoCarta {
     public Carta carta;

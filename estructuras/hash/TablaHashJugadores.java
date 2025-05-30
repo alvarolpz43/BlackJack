@@ -1,4 +1,7 @@
+package estructuras.hash;
 // TablaHashJugadores.java
+
+import estructuras.jugadores.Jugador;;
 
 public class TablaHashJugadores {
     private NodoHashJugador[] tabla;

@@ -1,3 +1,4 @@
+package estructuras.arbol;
 // NodoDecision.java
 public class NodoDecision {
     public String accion; // "pedir" o "plantarse"

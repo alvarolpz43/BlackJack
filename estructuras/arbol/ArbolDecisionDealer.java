@@ -1,3 +1,4 @@
+package estructuras.arbol;
 // ArbolDecisionDealer.java
 public class ArbolDecisionDealer {
     private NodoDecision raiz;

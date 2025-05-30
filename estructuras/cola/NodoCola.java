@@ -1,3 +1,4 @@
+package estructuras.cola;
 // NodoCola.java
 public class NodoCola {
     public String jugador;

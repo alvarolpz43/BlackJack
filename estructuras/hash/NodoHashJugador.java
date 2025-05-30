@@ -1,4 +1,9 @@
+
+
+package estructuras.hash;
 // NodoHashJugador.java
+
+import estructuras.jugadores.Jugador;;;
 
 public class NodoHashJugador {
     public String clave;

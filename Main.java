@@ -2,6 +2,14 @@
 
 import java.util.Scanner;
 
+import cartas.Baraja;
+import cartas.Carta;
+import estructuras.arbol.ArbolDecisionDealer;
+import estructuras.cola.ColaTurnos;
+import estructuras.hash.TablaHashJugadores;
+import estructuras.jugadores.Jugador;
+import estructuras.pila.PilaCartas;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -100,7 +108,7 @@ public class Main {
         if (jugador.getPuntaje() > 21) {
             System.out.println("\nEl dealer gana.");
         } else if (dealer.getPuntaje() > 21 || jugador.getPuntaje() > dealer.getPuntaje()) {
-            System.out.println("\n" + jugador.getNombre() + " gana! 🎉");
+            System.out.println("\n" + jugador.getNombre() + " gana!");
         } else if (dealer.getPuntaje() == jugador.getPuntaje()) {
             System.out.println("\nEmpate.");
         } else {
@@ -110,5 +118,6 @@ public class Main {
         // Mostrar historial de cartas jugadas
         System.out.println();
         historial.mostrarHistorial();
+        scanner.close();
     }
 }
